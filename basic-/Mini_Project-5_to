@@ -1,0 +1,22 @@
+#------------------------------------------------------------------
+#------------------------WORDS CALCULTOR------------------------
+sentence = input('Enter sentence: ')
+word  = input('Enter word: ')
+word_replace = input('Enter word_replace: ')
+
+print(f'length : {len(sentence)}')
+print(f'Position : {sentence.find(word)}')
+print(f'Exists: {word in sentence}')
+print(f'New sentence: {sentence.replace(word,word_replace)}')
+
+
+vowel = ['a','e','i','o','u']
+Modiefied = ''
+print ('Modiefied sentence')
+for iteam in sentence:
+        if iteam in vowel:
+               Modiefied += iteam.upper()
+        else:
+          Modiefied += iteam
+          #print(iteam,end ="")
+print(f'Modiefied: {Modiefied}')
