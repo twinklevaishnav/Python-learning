@@ -1,0 +1,58 @@
+#---------------------MOOD DETECTOR--------------------- 
+var = input(' How is your mood sad or happy ')
+
+if  var == "sad":
+     var = False  
+elif var == "happy":
+     var = True           
+               
+if  var:
+     print('Have a good day be always happy ')    
+else:
+     print(' Cheer up ')  
+#------------------------------------------------------------------------
+#---------------------AGE VERIFER---------------------
+age =  int(input('  how old are you  for studing') ) 
+
+if age <= 10:
+     print(' you are too young')
+elif age  == 18:
+     print('  you are a teen ')  
+else: 
+     print(f' You are perfect  as you are {age}')  
+#------------------------------------------------------------------------
+# ---------------------CREDIT CALCULATOR--------------------------
+price = float(input('how much credit do you have '))
+if price >10**6:
+    payment = price*0.10
+else:
+    payment = price*0.20
+
+print(f'payment is  $ {payment}')
+
+#or 
+marks =input('Enter your marks in test In math ')
+marks_1 =input('Enter your marks in test In eng ')
+if  marks  == marks_1:
+    print('congrates they are same')
+elif marks >= marks_1:
+     print(' Your maths is good ,practice eng')
+elif marks <= marks_1:
+     print(' Your eng is good ,practice  math')
+else:
+     print(' you are bad at studies')     
+#------------------------------------------------------------------------
+#
+marks =input('Enter your marks in test In math ')
+marks_1 =input('Enter your marks in test In eng ')
+if  marks  == marks_1:
+    print('congrates they are same')
+elif marks >= marks_1:
+     print(' Your maths is good ,practice eng')
+elif marks <= marks_1:
+     print(' Your eng is good ,practice  math')
+else:
+     print(' you are bad at studies')     
+
+
+
