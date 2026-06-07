@@ -6,7 +6,7 @@ This repository contains my Python practice programs, exercises, and mini-projec
 
 Topics covered include:
 
-* Python Basics
+* Python Basics 
 * Variables and Data Types
 * Loops and Conditions
 * Functions
