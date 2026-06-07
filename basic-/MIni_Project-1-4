@@ -42,7 +42,7 @@ elif marks <= marks_1:
 else:
      print(' you are bad at studies')     
 #------------------------------------------------------------------------
-#
+#---------------------TEST_MARKS_CALCULATOR ---------------------
 marks =input('Enter your marks in test In math ')
 marks_1 =input('Enter your marks in test In eng ')
 if  marks  == marks_1:
@@ -53,6 +53,34 @@ elif marks <= marks_1:
      print(' Your eng is good ,practice  math')
 else:
      print(' you are bad at studies')     
+# and use ~
+marks = True
+marks_1 = False
+if  marks  and marks_1:
+    print('congrates they are same')
+else:
+    print('Too bad')
 
+# or use~
+marks = True
+marks_1 = False
+if  marks  or marks_1:
+    print('congrates they are same')
+else:
+    print('Too bad')
+
+# If not use ~
+
+marks = True
+marks_1 = False
+if  not  marks  or marks_1: 
+    print('they are not same')
+    print(not marks)
+    print(not marks_1)
+else:
+    print('Too bad')
+    print(not marks)# marks true chnage to false
+    print(not marks_1)# marks false chnage to true
+  
 
 
