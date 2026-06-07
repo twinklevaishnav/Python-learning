@@ -2,7 +2,7 @@
 My python practice projects
 
 
-This repository contains my Python practice programs, exercises, and mini-projects.
+This repository contains my Python practice programs, exercises, and mini-projects, Machine learning and Ai
 
 Topics covered include:
 
