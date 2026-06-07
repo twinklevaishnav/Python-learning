@@ -1,6 +1,6 @@
 # Python-learning
 My python practice projects
-Python Learning
+
 
 This repository contains my Python practice programs, exercises, and mini-projects.
 
