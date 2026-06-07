@@ -1,9 +1,9 @@
-mini_1
+#-----------mini_1--------------
 password =  input('tell me a radon name ')
 print( f'The password has {len(password)} characters ')
 
-#------------------------------------------------------------------------
-#mini_2
+#----------------------mini_2--------------------------------------------------
+
 first = input('what is your first name ')
 last = input('what is your last name ')
 print(first.lower())# this  function is called method because it been used with sting
@@ -11,10 +11,12 @@ print(first.lower())# this  function is called method because it been used with 
 print(last.upper())# the upper()  here doubleqoutes doesn't take anything inside
 print(first,last)
 
-#------------------------------------------------------------------------
-#mini_3
+#--------------------------Input of gmail----------------------------------------------
 
 gmail = input('write your gmail')
 print(f'@ found at {gmail.find('a')}' )
 print(f'. found at {gmail.find('.')}')
 print(f' length of gmail is {len(gmail)}')
+#------------------------------------------------------------------------
+
+
