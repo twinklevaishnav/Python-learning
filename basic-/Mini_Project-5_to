@@ -20,3 +20,42 @@ for iteam in sentence:
           Modiefied += iteam
           #print(iteam,end ="")
 print(f'Modiefied: {Modiefied}')
+
+number =  input('Enter number: ')
+print(f'Int: {number}')
+print(f'Float: {float(number)}')
+print(f'bool: {bool(number)}')
+
+#------------------------------------------------------------------------
+#------------------------WORDS MODIFIER------------------------
+sentence = input('Enter sentence: ')
+vowel = ['a','e','i','o','u']
+modify = ""
+count = 0
+for iteam in sentence:
+     if iteam in vowel:
+          modify += iteam.upper() 
+          count += 1
+     elif iteam == ' ':   
+            modify += '!'
+     else:
+          modify += iteam.lower()  
+
+print(f'modified: {modify}') 
+print(f'count: {count}')      
+#------------------------------------------------------------------------
+#----------------------MAKNIG SENETNCE---------------------------------
+prices = [input("name: "),input("age: "),input("Class: ")]
+count = ''
+for iteams in prices:
+       count  += ' ' + iteams
+ 
+print(f'Outcome: ', count)
+#------------------------------------------------------------------------
+#-------------------------------------------------------
+
+
+
+
+
+
