@@ -52,7 +52,53 @@ for iteams in prices:
  
 print(f'Outcome: ', count)
 #------------------------------------------------------------------------
-#-------------------------------------------------------
+#------------------------VOWEL MAGIC-------------------------------
+
+sentence = input('Enter sentence: ')
+vowel = ['a','e','i','o','u']
+modify = ""
+count = 0
+for iteam in sentence:
+     if iteam in vowel:
+          modify += iteam.upper() 
+          count += 1
+     elif iteam == ' ':   
+            modify += '!'
+     else:
+          modify += iteam.lower()  
+
+print(f'modified: {modify}') 
+print(f'count: {count}')      
+#------------------------------------------------------------------------
+#-------------------------DICE GAME------------------------------
+import random
+class Dice:
+    def double(self,number):
+        return  number + number
+    
+   
+    def roll(self,number):
+      
+        first = random.choice(number)
+        second = random.choice(number)
+
+        print(f'{first,second}')
+        
+        if first == second:
+            print("This is Double")
+            print(f'{ self.double(first),self.double(second)}')
+
+          
+number = [1,2,3,4,5,6]
+
+blue = Dice()
+blue.roll(number)
+
+
+
+
+
+
 
 
 
