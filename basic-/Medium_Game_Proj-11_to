@@ -1,0 +1,83 @@
+#----------------------------------------------------------
+#--------------------PET GAME-------------------------
+pet_name = input(" choose a pet name: ").lower()
+
+ask = ''
+class Pet:
+       def stat(self):
+              return hunger
+hunger = 5  
+dog = Pet()  
+while ask != "quit"  and  hunger >=1:
+       ask = input("choose: ").lower()
+
+       if ask == 'feed':
+            hunger -= 1
+            print(f'{pet_name} ate food')
+       elif  ask == 'status':
+               
+               print(dog.stat()) 
+       elif  ask == 'play':
+             print('1. feed , 2. status 3. play,4. quit')
+       else:
+              print("I don't get it ")
+              break   
+
+#----------------------------------------------------------
+#-------------------- Treasure hunt-------------------------
+import random 
+number = [1,2,3,4,5,6,7,8,9,1,0]
+trap = [1,2,3]
+class  Treasure:
+      def __init__(self,x):
+            self.x = x
+    
+     
+      
+coins = Treasure(0) 
+
+def coin_randon():
+       reward =  random.choice(number)
+       trap_2 =  random.choice(trap)
+       randon =[ f'you found {reward} coins',f' Trap ! you lost {trap_2} coins','empty box 🤣😝']
+       pick = random.choice(randon)
+      
+       print(pick)
+       if  pick == randon[0]:
+             reward -= 1
+             coins.x += reward
+       elif  pick == randon[1]:
+             coins.x -= trap_2
+             print(f" negative point{coins.x}")
+           
+ask = ''
+while ask != 'quit' and  coins.x <= 0:
+      ask = input("choose:").lower()
+
+      if  ask == 'open':
+            coin_randon()
+      elif ask == 'status':
+            print(f' you have {coins.x} points')
+      elif ask == 'help':
+           print("1.open , 2. status, 3. quit,4. help")
+      else:
+            print("I don't get it ") 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
