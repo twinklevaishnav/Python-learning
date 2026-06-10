@@ -63,8 +63,51 @@ while ask != 'quit' and  coins.x <= 0:
       else:
             print("I don't get it ") 
 
+#----------------------------------------------------------
+#--------------------FAIL_OR PASS GAME-------------------------
 
 
+array = []
+count = 0
+passi = 0
+fail = 0
+
+while count < 5:
+
+    take = input("pass or fail? in five test").lower()
+  
+    array.append(take)
+
+    count += 1
+
+
+for item in array:
+    if item == "pass":
+        passi += 1
+    elif item == "fail":
+        fail += 1
+    else:
+        print("write properly")
+print(f"probability of pass is {passi / (passi + fail)}")
+
+# --------------or  another way to do the same task is :-
+
+passi = 0
+fail = 0
+
+take = input("pass or fail? in five test  output:- ").lower()
+  
+array = take.split()
+
+for item in array:
+    if item == "pass":
+        passi += 1
+    elif item == "fail":
+        fail += 1
+    else:
+        print("write properly")
+
+print(f"probability of pass is {passi / (passi + fail)}")
 
 
 
