@@ -1,0 +1,33 @@
+#----------------------------------------------------------
+#--------------------DATA-1-------------------------
+
+matrix =[[1,2,3],[4,5,6],[7,8,9]]
+
+c =  len(matrix[0])
+
+r = len(matrix)
+for item in range(r):
+    for single_item in range(c):
+         print(matrix[item][single_item], end = " ")
+
+    print()
+#----------------------------------------------------------
+#--------------------DATA-2-------------------------
+m1 = [[1,2,3],[4,5,6]]
+
+
+row1 = len(m1)
+column1 = len(m1[0])
+mat = []
+def calculate(item, single_item):
+     return m1[item][single_item] + m1[item][single_item]
+
+def first():
+    for item in  range(row1):
+        final = []
+        for single_item in range(column1):
+            final.append(calculate(item, single_item))
+        mat.append(final)
+            
+first()          
+print(mat)
