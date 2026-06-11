@@ -31,3 +31,21 @@ def first():
             
 first()          
 print(mat)
+#----------------------------------------------------------
+#--------------------DATA-3-------------------------
+
+students = [
+    {"Placed" : True, "Degree": "CS"},
+    {"Placed" : False, "Degree": "IT"},
+    {"Placed" : True, "Degree": "CS"},
+    {"Placed" : True, "Degree": "IT"}
+]
+total =len(students)
+count = 0
+for item in students:
+    if item.get('Degree') == "IT" :
+           count += 1
+
+
+print(f'THe probabilty a student got placed is: {count/total}')           
+    
