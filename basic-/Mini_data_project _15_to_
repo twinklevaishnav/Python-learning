@@ -48,4 +48,28 @@ for item in students:
 
 
 print(f'THe probabilty a student got placed is: {count/total}')           
-    
+#----------------------------------------------------------
+#--------------------DATA-3[#mean absolute error ]-------------------------
+
+
+import numpy as np
+actual = [10,20,30]
+predicted = [4,15,29]
+array = []
+
+for item,item_2 in zip(actual,predicted):
+    loss = abs(item - item_2)
+    array.append(loss)
+mean =  np.mean(array)
+print(mean)
+# or
+import numpy as np
+
+actual = np.array([10,20,30])# numpy 
+
+predicted = np.array([4,15,29])
+
+meann = np.mean(np.abs(actual - predicted))
+
+print(meann)
+
