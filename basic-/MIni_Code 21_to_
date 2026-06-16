@@ -14,3 +14,21 @@ while  guess_count < guess_limit :# noumber of chances of loop
                 print(' wrong')
             
 print('done')   
+#-------------------smallcode-2-----------------
+
+work = ''
+while  work != 'quit':
+     work = input ('>').lower()
+     if work == 'start':
+          print('car strated .... Ready to go!')
+     elif work == 'stop':
+          print('car stopped')   
+     elif work == 'help':
+          print(''' start - to start the car   
+                    stop - to stop the car
+                    quit - to quit the car''')
+     elif work == 'quit':
+          break     
+     else:
+          print(" I don't understand")   
+         
