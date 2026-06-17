@@ -30,5 +30,23 @@ while  work != 'quit':
      elif work == 'quit':
           break     
      else:
-          print(" I don't understand")   
-         
+          print(" I don't understand")  
+#-------------------smallcode-3-----------------
+
+for iteams in [1,2,3,4]: # here we can name iteams ,things or anything it just name
+         print(iteams)
+# or
+for iteams in ['apple', 'banna', 'graps']: 
+# or
+ for iteams in range(10):
+     print(iteams)
+#or
+for iteams in range(5,10,2):#we start with 5 go two more till 7 but stop till 9 cuz 10 not included
+     print(iteams)
+# or
+prices = [10,20,30]
+total = 0
+for  iteams in prices:
+     total += iteams
+     
+print(f' total : {total}')  
