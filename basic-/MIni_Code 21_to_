@@ -50,3 +50,28 @@ for  iteams in prices:
      total += iteams
      
 print(f' total : {total}')  
+#-------------------smallcode-4-----------------
+
+for x in range(3):
+    for y in range(3):
+        print(f'{x,y}')
+
+# and 
+number = [5,2,5,2,2]
+
+for x in number:
+    output = ''
+    for repeat in range(x):
+        output += 'x'
+    print(output)
+
+#and 
+name =[ input('Name:'),'bob']
+print(name[1])
+print(name[1].upper())
+
+if name[0] == name[0].lower():# we can't put lower or upper in front ogf the name list like name.lower cuz i will give error as then it will become like list equals string which is not right
+      name[0] = 'dog'
+      print(name[0]) 
+else: 
+    print(name[0].upper())      
