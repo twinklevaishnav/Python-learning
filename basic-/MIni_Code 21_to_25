@@ -33,7 +33,7 @@ while  work != 'quit':
           print(" I don't understand")  
 #-------------------smallcode-3-----------------
 
-for iteams in [1,2,3,4]: # here we can name iteams ,things or anything it just name
+for iteams in [1,2,3,4]: 
          print(iteams)
 # or
 for iteams in ['apple', 'banna', 'graps']: 
@@ -41,7 +41,7 @@ for iteams in ['apple', 'banna', 'graps']:
  for iteams in range(10):
      print(iteams)
 #or
-for iteams in range(5,10,2):#we start with 5 go two more till 7 but stop till 9 cuz 10 not included
+for iteams in range(5,10,2):
      print(iteams)
 # or
 prices = [10,20,30]
@@ -70,7 +70,7 @@ name =[ input('Name:'),'bob']
 print(name[1])
 print(name[1].upper())
 
-if name[0] == name[0].lower():# we can't put lower or upper in front ogf the name list like name.lower cuz i will give error as then it will become like list equals string which is not right
+if name[0] == name[0].lower():
       name[0] = 'dog'
       print(name[0]) 
 else: 
@@ -79,8 +79,8 @@ else:
 #-------------------small Matrix code -1-----------------
 
 matrix =[[1,2,3],[4,5,6],[7,8,9]]
-matrix[0][1] = 40 # this is changing the value of 2 ->40
-print(matrix[0][1])# this is [0] is the first list which is [1,2,3] then the [1] is the list's second lnumber whihc iss 2
+matrix[0][1] = 40
+print(matrix[0][1]) 
 
 # and
 matrix =[[1,2,3],[4,5,6],[7,8,9]]
