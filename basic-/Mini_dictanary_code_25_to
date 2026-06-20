@@ -1,0 +1,36 @@
+#-----------------------DICTIONIARY code1-------------------
+customer = {"name" : "John",
+            "age": 30,
+            "is_verified ":  True 
+}
+
+print(customer["name"])
+print(customer.get("age"))
+print(customer.get("dog","bob"))
+
+customer["name"] = "jack"
+
+# and 
+number = input("Phone: ")
+word = {"1" : "one",
+        "2" : "two",
+        "3" : "three",
+        "4" : "four"
+         }
+
+output = ""
+for ch in number:
+        output += word.get(ch,'!')+ " "
+print(output)       
+              
+# and. 
+ 
+ask = input(">")
+diff = ask.split(' ')
+face = { ":(" : "🙁",
+         ":)" : "😀"
+       }
+change = ""
+for  items in diff:
+    change += face.get(items,items) + " "
+print(change) 
