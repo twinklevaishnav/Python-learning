@@ -1,0 +1,76 @@
+#-----------------------DICTIONIARY code1-------------------
+customer = {"name" : "John",
+            "age": 30,
+            "is_verified ":  True 
+}
+
+print(customer["name"])
+print(customer.get("age"))
+print(customer.get("dog","bob"))
+
+customer["name"] = "jack"
+
+# and 
+number = input("Phone: ")
+word = {"1" : "one",
+        "2" : "two",
+        "3" : "three",
+        "4" : "four"
+         }
+
+output = ""
+for ch in number:
+        output += word.get(ch,'!')+ " "
+print(output)       
+              
+# and. 
+ 
+ask = input(">")
+diff = ask.split(' ')
+face = { ":(" : "🙁",
+         ":)" : "😀"
+       }
+change = ""
+for  items in diff:
+    change += face.get(items,items) + " "
+print(change) 
+#-----------------------Function code1-------------------
+def greet_users():
+     print("hello")
+
+    
+greet_users()
+# and 
+
+def greet_users(name, last_name):
+     print(f'hello {name}'+ f'{last_name}')
+
+    
+greet_users("John","bob")
+#or
+greet_users(last_name=" mary", name = "dog")# this is right
+greet_users(" mary", name = "dog")
+#greet_users(last_name=" mary", "dog")
+# and 
+
+def square(number):
+     return number * number
+
+ans = square(3)
+print(ask)
+# or just write
+
+print(square(3))
+# and use of function front he above function
+def work(ask):
+      diff = ask.split(' ')
+      face = { ":(" : "🙁",
+            ":)" : "😀"
+            }
+      change = ""
+      for items in diff:
+        change  += face.get(items,items) + " "
+      return change
+
+ask = input(">")
+print(work(ask))  
