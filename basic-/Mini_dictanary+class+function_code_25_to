@@ -74,3 +74,64 @@ def work(ask):
 
 ask = input(">")
 print(work(ask))  
+
+#-----------------------class and Function code1-------------------
+
+
+#CLASS
+class Point:
+     def move(self):
+          print("move")
+     def draw(self):
+          print("draw")     
+
+point_1 = Point()# here we called the class
+point_1.x = 10
+point_1.y = 20
+print( point_1.x)
+point_1.draw() 
+
+# or 
+
+class Point:
+     def __init__(self,x,y):# this is automatically done without calling the function
+          self.x = x# here self become the object  name which is point.x
+          self.y = y# here self become the object   name which is point.y
+          self.y = y
+
+     def move(self):
+          print("move")
+     def draw(self):
+          print("draw")
+
+point = Point(10,20)# 1 this makes the object 10->xand 20-->y
+point.x =12# here  the x is updated
+print(point.x)
+# and
+
+class Point:
+    def __init__(self,age):
+        self.age = age
+        print(f"I'm {self.age} years old")
+
+    def sentence(self):
+        print(f" I am {self.name}")
+    
+Name = Point(20)
+Name.name = "john"
+
+Name.sentence()
+
+# and 
+class Mammal:
+    def work(self):
+        print(" hey dude just bark now :)")
+
+class Dog(Mammal):# this means the dog is inhertering the function of the mammel class so to not repeat the work function in the do an cat class
+     pass# means to say  the computer  that just leave this function for now and go on      
+
+class Cat(Mammal):
+     pass# means to say  the computer  that just leave this function for now and go on      
+
+animal = Dog()
+animal.work()
