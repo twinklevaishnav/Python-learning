@@ -1,0 +1,19 @@
+import openpyxl as xl 
+   from openpyx.chart import BarChart , Reference
+
+   def process_workbook(filename)
+               wb = xl.load_wordload(filename)
+               sheet = wb['sheet1']
+               cell = sheet['a1']
+               or this above and the  below line are  the same 
+               cell = sheet.cell(1,1) this is coordinate sth (row ,column) 
+               for row   in range(2, sheet.ma_row + 1):
+                         cell = sheet.cell(row , 3)
+                         correcte_price =  cell.value * 0.9  
+                         correcte_price = sheet.cell(row , 4)
+                         correcte_price.value = correcte_price
+               values =Reference( sheet, min_row =2, max_row=sheet.max_row,min_col =4, max_col=4)
+               chart = BarChat()
+               chart.add_data(values)  
+               sheet.add_chart(chart,'e2')     
+               wb.save(filename)
