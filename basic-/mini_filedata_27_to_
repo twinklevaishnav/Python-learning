@@ -1,3 +1,5 @@
+
+#---------------------------file_data_1-----------------
 import openpyxl as xl 
    from openpyx.chart import BarChart , Reference
 
@@ -17,3 +19,16 @@ import openpyxl as xl
                chart.add_data(values)  
                sheet.add_chart(chart,'e2')     
                wb.save(filename)
+
+#---------------------------file_data_2-----------------
+
+file = open("name.txt" , 'w')# 
+file.write(" Your face looks 🙄 like a flattend starfish stuck to the rock 😤 get out of here before i throught uou into the sea")
+file.write("\napple")
+file.close()
+
+#-----------------------------------------------------------------------------------------#  or  this  closes the txt file. autumaticaly 
+with open("name.txt" , 'r') as file:
+      text =  file.read()
+      print(text)
+
