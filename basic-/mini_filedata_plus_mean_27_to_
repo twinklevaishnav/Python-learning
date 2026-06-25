@@ -27,6 +27,26 @@ file.write(" Your face looks ðŸ™„ like a flattend starfish stuck to the rock ðŸ˜
 file.write("\napple")
 file.close()
 
+
+#---------------------------mean_1-----------------
+
+import numpy as np
+
+salary = [20,10,30 ,5,150]
+salary.sort()
+total = len(salary)
+
+median = 0
+meann = np.mean(salary)
+for item in salary:
+    if total % 2 == 1:# this is to check  if the number of item is odd  or even 
+       median =  salary[total//2]# here when the number of item i the array is odd then we do total divided by 2 which tell us the number stored at that place in he array
+    else:
+       median =  salary[(total//2)-1] + salary[total//2] #here when the number of iteam is the array is even  then we do  that and add ubt number which tell us the number stored at that place in he array
+
+print(median,meann)
+
+
 #-----------------------------------------------------------------------------------------#  or  this  closes the txt file. autumaticaly 
 with open("name.txt" , 'r') as file:
       text =  file.read()
