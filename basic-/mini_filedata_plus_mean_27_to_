@@ -51,4 +51,16 @@ print(median,meann)
 with open("name.txt" , 'r') as file:
       text =  file.read()
       print(text)
+#----------------------------data_1--------------
+import random
+import numpy as np 
+marks = [ 20,50,10,60,70,90,100]
+sample_1 = random.sample(marks ,5)# this  funcction(sample) will not take a value agian after picking it up 
+meann_1 = np.mean(sample_1)
+print(sample_1)
+print(meann_1)
+sample_2 = random.sample(marks ,5)
+meann_2 = np.mean(sample_2)
 
+print(sample_1)
+print(meann_2)
