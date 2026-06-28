@@ -26,7 +26,10 @@ file = open("name.txt" , 'w')#
 file.write(" Your face looks 🙄 like a flattend starfish stuck to the rock 😤 get out of here before i throught uou into the sea")
 file.write("\napple")
 file.close()
-
+#or
+with open("name.txt" , 'r') as file:
+      text =  file.read()
+      print(text)
 
 #---------------------------mean_1-----------------
 
@@ -46,12 +49,7 @@ for item in salary:
 
 print(median,meann)
 
-
-#-----------------------------------------------------------------------------------------#  or  this  closes the txt file. autumaticaly 
-with open("name.txt" , 'r') as file:
-      text =  file.read()
-      print(text)
-#----------------------------data_1--------------
+#----------------------------mean_1--------------
 import random
 import numpy as np 
 marks = [ 20,50,10,60,70,90,100]
@@ -64,3 +62,17 @@ meann_2 = np.mean(sample_2)
 
 print(sample_1)
 print(meann_2)
+#-------------------------mean_2-----------------
+
+import random
+import numpy as np 
+
+marks = [ 20,50,10,60,70,90,100]
+sample_mean = []
+
+for item in range(5):
+    sample = random.sample(marks,4)
+    mean = np.mean(sample)
+    sample_mean.append(mean)
+
+print(sample_mean)
