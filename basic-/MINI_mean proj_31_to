@@ -13,7 +13,23 @@ meann_2 = np.mean(sample_2)
 
 print(sample_1)
 print(meann_2)
+#------------------------mean_4-------------
 
+import random
+import numpy as np 
+
+actual = 70 
+predicted =65
+
+loss = abs(actual - predicted)** 2
+
+print(loss)
+
+#  sum of  all the error
+
+actual = [10,20,45]
+predicted =[25,15,90] 
+plus = 0
 
 
 
