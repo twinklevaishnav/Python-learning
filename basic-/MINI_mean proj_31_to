@@ -1,5 +1,5 @@
 
-#------------------------mean_3-------------
+#------------------------mean_3------------------------
 
 import random
 import numpy as np 
@@ -13,7 +13,7 @@ meann_2 = np.mean(sample_2)
 
 print(sample_1)
 print(meann_2)
-#------------------------mean_4-------------
+#------------------------mean_4------------------------
 
 import random
 import numpy as np 
@@ -30,6 +30,23 @@ print(loss)
 actual = [10,20,45]
 predicted =[25,15,90] 
 plus = 0
+#---------------------------Mean_5---------------------
+for item in range(len(actual)):
+    loss = abs( actual[item]- predicted[item])**2
+    plus += loss
+    print(plus)
+print(f'Total loss is {loss}')
+
+# Mean of the syares error
+actual = [10,20,45]
+predicted =[25,15,90] 
+
+array = []
+for item in range(len(actual)):
+    loss = abs( actual[item]- predicted[item])**2
+    array.append(loss)
+mean = np.mean(loss)
+print(f'Total mean is {mean}')
 
 
 
