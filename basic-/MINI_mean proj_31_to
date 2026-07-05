@@ -48,6 +48,18 @@ for item in range(len(actual)):
 mean = np.mean(loss)
 print(f'Total mean is {mean}')
 
+#---------------------------Mean_6---------------------
 
 
 
+#mean absolute error 
+import numpy as np
+actual = [10,20,30]
+predicted = [4,15,29]
+array = []
+
+for item,item_2 in zip(actual,predicted):
+    loss = abs(item - item_2)
+    array.append(loss)
+meann =  np.mean(array)
+print(meann)
