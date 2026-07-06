@@ -63,3 +63,38 @@ for item,item_2 in zip(actual,predicted):
     array.append(loss)
 meann =  np.mean(array)
 print(meann)
+
+# or  using full numpy librabry
+import numpy as np
+
+actual = np.array([10,20,30])# this is rela array what we used to thinnk that[] is array no this i a list just here it does't automatically makes a list so we make array
+
+
+predicted = np.array([4,15,29])
+
+meann = np.mean(np.abs(actual - predicted))
+
+print(meann)
+
+# or 
+actual = [10,20,45]
+predicted =[25,15,90] 
+
+t = list(zip(actual,predicted))#it make  a  tuple in list  
+loss = 0
+for tup in t:
+      loss += abs(tup[0] - tup[1]) * 2
+print(loss)
+
+#or
+loss = sum((a-p)*2 for a,p in t)/ len(actual)
+print(loss)
+# or 
+import numpy as np
+
+actual = np.array([10,30,25])
+predicted = np.array([15,19,20])
+
+mse = np.mean((actual - predicted)**2)
+
+print(mse)
