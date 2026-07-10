@@ -1,0 +1,40 @@
+#predicting value and then error
+import numpy as np
+x = [1,2,3]
+y = [3,6,9]
+# y =3x
+# y = wx
+#  they are predictingh value of y wile using x and then finding the error in the prediction of y
+w = 0.4
+listt= []
+def predict(w,x):
+   for item in x: 
+     listt.append(w*item)
+   return  listt
+
+listt_2 = []   
+ 
+ans = predict(w,x)
+print(ans)
+for item ,item_2 in zip(y,ans):
+    loss = (item - item_2)**2
+    listt_2.append(loss)
+
+meann = np.mean(listt_2)
+print(meann)
+
+# or
+
+
+def predict(w,x):
+     return [ w * item for item in x]
+def losss(y,ans):
+      return np.mean(
+            [(item - item_2)**2 for item,item_2 in zip(y,ans)]
+                      )
+
+ans = predict(w,x)
+print(losss(y,ans))
+
+#  or for the ans and print line we can write
+print(losss(y,predict(0.4,x)))
