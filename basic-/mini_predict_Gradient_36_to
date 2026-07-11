@@ -38,3 +38,15 @@ print(losss(y,ans))
 
 #  or for the ans and print line we can write
 print(losss(y,predict(0.4,x)))
+#---------------------------Gradient---------------
+
+# use of gradient
+x = [1,2,3]
+y = [3,6,9]
+def gradient(x,y,w):
+    
+    for item in range(len(x)):
+        error = y[item] - w*x[item]
+        grad -= 2*x[item]*error# this is the formula w = w- learing_rate * gradeint
+    return grad/ len(x)# we divide cux we wnat avg gradient
+
