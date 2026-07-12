@@ -49,4 +49,26 @@ def gradient(x,y,w):
         error = y[item] - w*x[item]
         grad -= 2*x[item]*error# this is the formula w = w- learing_rate * gradeint
     return grad/ len(x)# we divide cux we wnat avg gradient
+#-----------------------------------Numpy---------------------------------------------------
+import numpy as np
 
+a = np.array([1,2,3,4,5,6,7,8,9])
+
+b = a[a%2 == 0]# this gives boolean values like[true, false, true] qand makes array og the true values
+print (b)
+
+
+# and
+import numpy as np
+
+a = np.array([1,2,3,4,5,6,7,8,9])
+
+result = np.where(a%2 == 0,1,0)#  where tell the positio no the numeber, np.where(condition, value_if_true, value_if_false)
+print (result)
+# or 
+import numpy as np
+
+a = np.array([1,2,3,4,5,6,7,8,9])
+
+result = (a%2 == 0).astype(int)# converts to interger
+print (result)
