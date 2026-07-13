@@ -72,3 +72,23 @@ a = np.array([1,2,3,4,5,6,7,8,9])
 
 result = (a%2 == 0).astype(int)# converts to interger
 print (result)
+#------
+import  pandas as pd # deatild with tabular data
+
+s = pd.Series([10,4,7,6,2])
+ind = pd.Series([10,4,6] , index = ['a','b','c'])
+dict = {# this is a dictanionary
+    'name': ["maj",'maya'],
+     'age': [2,45]
+}
+frame = pd.DataFrame(dict)# this frames data properly
+frame_2 = pd.DataFrame([[1,2],[3,4],[5,6]] ,columns=['A','B'])
+frame_2.index =['a', 'b', 'c']#this is the Serial number
+print(frame_2)
+print(frame)
+print(type(dict))
+print(ind)
+print(s)
+print(frame.loc[1,'name'])
+print(frame.iloc[0,1])
+
